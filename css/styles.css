@@ -1,0 +1,56 @@
+
+.nav-top{
+    width: 100%;
+}
+
+.btn-usuarios{
+    justify-content: space-around;
+
+}
+
+.img-notebooks{
+    width: 250px;
+    
+}
+
+.lista-notebooks{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    border:1px solid black;
+    align-items: center;
+    padding: 5px;
+    list-style:none;
+    text-decoration: none;
+
+}
+.h1-general{
+    text-align: center;
+}
+
+.form-general{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.p-login{
+    font-size:25px;
+}
+
+.btn-login{
+    font-size:20px;
+    padding:5px;
+    width:30%;
+}
+
+.lista-footer{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.container-footer{
+    background-color:grey;
+    width:100%;
+}
