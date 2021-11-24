@@ -14,15 +14,13 @@ class MarcaView extends View {
         $this->getSmarty()->display('templates/marcas.tpl');
     }
 
-    public function showFormMarca($error) {
+    public function showFormMarca() {
         $this->getSmarty()->assign('title', "Form Marca");
-        $this->getSmarty()->assign('error', $error);        
         $this->getSmarty()->assign('home', BASE_URL.'home');
         $this->getSmarty()->display('templates/formMarca.tpl');
     }
-    public function showEditMarca($error, $id) {
+    public function showEditMarca($id) {
         $this->getSmarty()->assign('title', "Edit Marca");
-        $this->getSmarty()->assign('error', $error);
         $this->getSmarty()->assign('id_marca',$id);           
         $this->getSmarty()->assign('home', BASE_URL.'home');
         $this->getSmarty()->display('templates/formEditMarca.tpl');

@@ -10,7 +10,7 @@ class Model {
     }
 
     public function create_connection() {
-        //IMPORTANTE!! INDICAR EL PUERTO!
+        //INDICAR EL PUERTO!
         $host = 'localhost';
         $userName = 'root';
         $password = '';

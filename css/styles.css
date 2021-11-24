@@ -51,6 +51,10 @@
 }
 
 .container-footer{
-    background-color:grey;
+    background-color:rgb(129, 15, 15);
     width:100%;
+}
+
+.img-notebook{
+    width: 200px;
 }

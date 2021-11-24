@@ -8,28 +8,29 @@ class NotebookView extends View {
         parent::__construct();
     }
 
-    function showNotebooks($listaNotebooks) {
+    function showNotebooks($error=null, $listaNotebooks) {
         $this->getSmarty()->assign('home',BASE_URL.'home');
+        $this->getSmarty()->assign('error', $error);     
         $this->getSmarty()->assign('listaNotebooks',$listaNotebooks);
         $this->getSmarty()->display('templates/tablaNotebooks.tpl');
     }
 
-    public function showNotebook($notebook) {
+    public function showNotebook($error=null, $notebook) {
         $this->getSmarty()->assign('title', "notebook");
-        $this->getSmarty()->assign('error',null);        
+        $this->getSmarty()->assign('error', $error);     
         $this->getSmarty()->assign('home', BASE_URL.'home');
         $this->getSmarty()->assign('notebook',$notebook);
         $this->getSmarty()->display('templates/notebook.tpl');
     }
 
-    public function showFormNotebook($error, $listaMarcas) {
+    public function showFormNotebook($error=null, $listaMarcas) {
         $this->getSmarty()->assign('title', "Form Notebook");
         $this->getSmarty()->assign('error', $error);
         $this->getSmarty()->assign('listaMarcas',$listaMarcas);          
         $this->getSmarty()->assign('home', BASE_URL.'home');
         $this->getSmarty()->display('templates/formNotebook.tpl');
     }
-    public function showEditNotebook($error, $listaMarcas, $id) {
+    public function showEditNotebook($error=null, $listaMarcas, $id) {
         $this->getSmarty()->assign('title', "Edit Notebook");
         $this->getSmarty()->assign('error', $error);
         $this->getSmarty()->assign('listaMarcas',$listaMarcas); 

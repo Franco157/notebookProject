@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-10-11 14:02:55
+/* Smarty version 3.1.39, created on 2021-11-18 17:20:11
   from 'D:\xampp\htdocs\projects\web2\templates\tablaUsuarios.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_616427efdd0340_67341506',
+  'unifunc' => 'content_61967d3b2e6622_80791128',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3ff45e561ac33718195f04124347631b287dae83' => 
     array (
       0 => 'D:\\xampp\\htdocs\\projects\\web2\\templates\\tablaUsuarios.tpl',
-      1 => 1633953774,
+      1 => 1634071385,
       2 => 'file',
     ),
   ),
@@ -22,10 +22,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_616427efdd0340_67341506 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61967d3b2e6622_80791128 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-<h1> LISTA DE USUARIOS </h1>
+<h1 class="h1-general"> LISTA DE USUARIOS </h1>
 <div class=" col-auto m-2 text-center">
     <table class="table  table-dark">
         <thead>

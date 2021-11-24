@@ -4,7 +4,7 @@ require_once('Model.php');
 
 class UserModel extends Model {
 
-    public function getUserByUsername($email) {
+    public function getUserByEmail($email) {
         $query = $this->getDb()->prepare('SELECT * FROM usuarios WHERE email = ?');
         $query->execute([$email]);
         return $query->fetch(PDO::FETCH_OBJ);

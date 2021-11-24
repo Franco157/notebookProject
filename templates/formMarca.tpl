@@ -6,9 +6,5 @@
         <button>AGREGAR</button>
     </form>
 </div>
-{if $error}
-    <div class="alert alert-danger" role="alert">
-        {$error}
-    </div>
-{/if}
+
 {include 'templates/footer.tpl'}

@@ -34,7 +34,7 @@ class AuthHelper {
         }
     }
 
-    public static function getLoggedUserName() {
+    public static function getLoggedEmail() {
         self::start();
         if (isset($_SESSION['EMAIL'])) {
             return $_SESSION['EMAIL'];
